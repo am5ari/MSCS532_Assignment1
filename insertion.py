@@ -10,3 +10,16 @@ def monotonic_insertion(arr):
             j -= 1
 
         arr[j + 1] = key
+
+    # Main function to execute the sorting
+    user_input = input("Enter numbers separated by spaces: ")
+
+    # Convert the input string into a list of integers
+    numbers = list(map(int, user_input.split()))
+
+    print("Original list:", numbers)
+
+    # Sort the numbers
+    monotonic_insertion(numbers)
+
+    print("Sorted list in monotonically decreasing order:", numbers)
